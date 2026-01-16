@@ -47,8 +47,8 @@ def train_lag_dataset():
         root=Path("./datasets/LAG_organized"),
         normal_dir="good",
         abnormal_dir="defect",
-        train_batch_size=8,        # Reduced from 32 for faster training
-        eval_batch_size=8,         # Reduced from 32
+        train_batch_size=32,        # Reduced from 32 for faster training
+        eval_batch_size=32,         # Reduced from 32
         num_workers=0,             # Disabled for Windows/faster iteration
         # Split configuration
         normal_split_ratio=0.8,    # 80% of normal images for training
@@ -61,7 +61,7 @@ def train_lag_dataset():
     
     # Initialize the engine
     engine = Engine(
-        max_epochs=50,  # Increased - GANomaly needs proper training
+        max_epochs=50,
         accelerator="auto",
         devices=1,
         default_root_dir="./results/lag_ganomaly",

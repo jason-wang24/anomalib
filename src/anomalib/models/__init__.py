@@ -78,6 +78,7 @@ from .image import (
     Supersimplenet,
     Uflow,
     UniNet,
+    Vae,
     VlmAd,
     WinClip,
 )
@@ -119,6 +120,7 @@ __all__ = [
     "Supersimplenet",
     "Uflow",
     "UniNet",
+    "Vae",
     "VlmAd",
     "WinClip",
 ]

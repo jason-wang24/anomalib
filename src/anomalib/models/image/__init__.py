@@ -43,6 +43,7 @@ Available Models:
     - :class:`SuperSimpleNet`: SuperSimpleNet
     - :class:`Uflow`: Unsupervised Flow
     - :class:`UniNet`: Student-Teacher Contrastive Learning Model
+    - :class:`Vae`: Variational Autoencoder
     - :class:`VlmAd`: Vision Language Model Anomaly Detection
     - :class:`WinClip`: Zero-/Few-Shot CLIP-based Detection
 """
@@ -67,6 +68,7 @@ from .stfpm import Stfpm
 from .supersimplenet import Supersimplenet
 from .uflow import Uflow
 from .uninet import UniNet
+from .vae import Vae
 from .vlm_ad import VlmAd
 from .winclip import WinClip
 
@@ -91,6 +93,7 @@ __all__ = [
     "Supersimplenet",
     "Uflow",
     "UniNet",
+    "Vae",
     "VlmAd",
     "WinClip",
 ]
